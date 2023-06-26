@@ -1,0 +1,12 @@
+@import url("https://fonts.cdnfonts.com/css/argue-demo");
+.navbar-custom {
+  background-color: #EEF1FB;
+}
+
+nav .navbar-brand span {
+  color: #F65606;
+}
+nav .btn-custom {
+  width: 165px;
+  height: 55px;
+}

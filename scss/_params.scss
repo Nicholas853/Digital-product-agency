@@ -1,0 +1,48 @@
+@import url('https://fonts.cdnfonts.com/css/argue-demo');
+
+// Colors
+$primary: #EEF1FB;
+$secondary: #DEE1E9;
+
+// Font width
+$fw: (
+  thin: 100,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700,
+  black: 800
+);
+// Font family
+$ff-base: 'argue-demo', sans-serif;
+// Font sizes
+$fs-base-mobile: 14px;
+$fs-base-desktop: 16px;
+
+$fs-xs: .75rem;
+$fs-s: .875rem;
+$fs-base: 1rem;
+$fs-m: 1.125rem;
+$fs-l: 1.25rem;
+$fs-xl: 1.5rem;
+$fs-xxl: 2rem;
+$fs-xxxl: 2.25rem;
+$fs-xxxxl: 2.5rem;
+
+// Line heights
+$lh-base: 1.2;
+$lh-sm: 1.28;
+$lh-lg: 1.5;
+
+
+// BREAKPOINTS
+$breakpoint-sm: 576px;
+$breakpoint-sm-max: 575px;
+$breakpoint-md: 768px;
+$breakpoint-md-max: 767px;
+$breakpoint-lg: 992px;
+$breakpoint-lg-max: 991px;
+$breakpoint-xl: 1200px;
+$breakpoint-xl-max: 1199px;
+$breakpoint-xxl: 1400px;
+
