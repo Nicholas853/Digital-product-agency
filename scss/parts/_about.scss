@@ -1,0 +1,70 @@
+.about {
+    z-index: 0;
+    background-color: $primary;
+    max-width: 1440px;
+    height: 1280px;
+    margin: auto;
+
+    position: relative; /* Додали цей рядок */
+
+    .about-header {
+        font-family: $ff-base;
+        font-size: 80px;
+        position: absolute; /* Додали цей рядок */
+        top: 50%; /* Додали цей рядок */
+        left: 50%; /* Додали цей рядок */
+        transform: translate(-50%, -170%); /* Додали цей рядок */
+    }
+
+    .about-young-man {
+        position: relative;
+        max-width: 520px;
+        max-height: 589px;
+        .young-man {
+            z-index: 6;
+        }
+    }
+
+    .about-circle {
+        position: absolute; /* Змінили position на absolute */
+        left: 50%; /* Змінили left на 50% */
+        bottom: 0; /* Додали bottom: 0 для вирівнювання по нижньому краю */
+        transform: translateX(-35%); /* Додали для центрування по горизонталі */
+        z-index: 2;
+        max-width: 897px;
+        max-height: 897px;
+    }
+
+    .about-box.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    .about-box {
+        z-index: 4;
+        position: absolute; /* Змінили position на absolute */
+        left: 0; /* Змінили left на 0 */
+        bottom: 0; /* Додали bottom: 0 для вирівнювання по нижньому краю */
+        background-color: #1A1D30;
+        max-width: 899px;
+        height: 290px;
+
+        .about-box-header {
+            color: white;
+            font-family: $ff-base;
+            font-size: 90px;
+        }
+
+        .about-box-descr {
+            color: #CCCCCC;
+            font-size: 18px;
+        }
+
+        .first-w {
+            max-width: 202px;
+        }
+
+        .second-w {
+            max-width: 246px;
+        }
+    }
+}
