@@ -1,0 +1,63 @@
+.def-design{
+    position: relative;
+    max-width: 1600px;
+    height: 1520px;
+    background-color: $secondary;
+    margin: 0;
+    hr{
+        border: 1px solid $primary;
+    }
+    &-img{
+        max-width: 1486px;
+        height: 334px;
+        position: absolute;
+        margin: 76px 72px 0px 42px;
+    }
+    &-header{
+        max-width: 612px;
+        height: 160px;
+        margin: 154px 586px 0px 402px;
+        color: #1A1D30;
+        font-family: $ff-base;
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 80px;
+    }
+}
+.carousel-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center; /* Змінено */
+    align-items: flex-start;
+    margin-top: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex-shrink: 0;
+    margin-right: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
+  .carousel-item.visible-left {
+    opacity: 1; /* Змінено */
+    transform: translateX(-50%);
+  }
+  
+  .carousel-item.visible-right {
+    opacity: 1; /* Змінено */
+    transform: translateX(50%);
+  }
+  
+  
