@@ -4,46 +4,76 @@
     max-width: 1440px;
     height: 1280px;
     margin: auto;
-
-    position: relative; /* Додали цей рядок */
+    position: relative; 
 
     .about-header {
         font-family: $ff-base;
         font-size: 80px;
-        position: absolute; /* Додали цей рядок */
-        top: 50%; /* Додали цей рядок */
-        left: 50%; /* Додали цей рядок */
-        transform: translate(-50%, -170%); /* Додали цей рядок */
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -170%); 
     }
 
-    .about-young-man {
-        position: relative;
-        max-width: 520px;
-        max-height: 589px;
-        .young-man {
-            z-index: 6;
-        }
+    .about-btn{
+        max-width: 184px;
+        height: 63px;
+        position: absolute;
+        top: 35%; 
+        z-index: 6;
+    }  
+    .get-started{
+        left: 35%; 
+        color: white;
+        background-color: #F65606;
+        border-color: #F65606;
+    }
+    .btn:focus{
+        box-shadow: rgb(246, 86, 6) !important;
+    }
+    .view-demo{
+        left: 50%;
+    }
+    .about-icon {
+        position: absolute; 
+        left: 80%; 
+        bottom: 69%; 
+        z-index: 0;
+        transform: translateX(-55%);
+        max-width: 186px;
+        max-height: 110px;
+    }
+    .about-ellipses {
+        position: absolute; 
+        left: 50%; 
+        bottom: 68%; 
+        z-index: 4;
+        transform: translateX(-55%);
+    }
+    .about-young-girl{
+        position: absolute; 
+        left: 56.5%; 
+        bottom: 27%; 
+        z-index: 4;
+        transform: translateX(-55%);
     }
 
     .about-circle {
-        position: absolute; /* Змінили position на absolute */
-        left: 50%; /* Змінили left на 50% */
-        bottom: 0; /* Додали bottom: 0 для вирівнювання по нижньому краю */
-        transform: translateX(-35%); /* Додали для центрування по горизонталі */
+        position: absolute; 
+        left: 50%; 
+        bottom: 0; 
+        transform: translateX(-35%);
         z-index: 2;
         max-width: 897px;
         max-height: 897px;
     }
 
-    .about-box.visible {
-        opacity: 1;
-        transform: translateX(0);
-      }
+    // Black box
     .about-box {
         z-index: 4;
-        position: absolute; /* Змінили position на absolute */
-        left: 0; /* Змінили left на 0 */
-        bottom: 0; /* Додали bottom: 0 для вирівнювання по нижньому краю */
+        position: absolute; 
+        left: -5.55%; 
+        bottom: 0; 
         background-color: #1A1D30;
         max-width: 899px;
         height: 290px;
@@ -67,4 +97,16 @@
             max-width: 246px;
         }
     }
+    // Black box
+    // Young man with laptop
+    .about-young-man{
+        position: absolute; 
+        left: 70%; 
+        bottom: 0; 
+        transform: translateX(-35%);
+        z-index: 4;
+        max-width: 606px;
+        max-height: 742px;
+    }
+    // Young man with laptop
 }

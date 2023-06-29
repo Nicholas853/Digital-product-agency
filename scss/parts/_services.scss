@@ -1,0 +1,17 @@
+.services{
+    max-width: 1600px;
+    height: 1100px;
+    .services-header{
+        max-width: 533px;
+        color: black;
+        font-family: $ff-base;
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .services-descr{
+        max-width: 493px;
+        color: black;
+        font-family: $ff-base;
+        font-size: 18px;
+    }
+}
