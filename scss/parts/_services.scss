@@ -1,4 +1,9 @@
 .services{
+    position: relative;
+    margin-left: 100px;
+    .mt-200{
+        margin-top: 200px;
+    }
     max-width: 1600px;
     height: 1100px;
     .services-header{
@@ -13,5 +18,45 @@
         color: black;
         font-family: $ff-base;
         font-size: 18px;
+    }
+    .services-young-man{
+        position: absolute; 
+        left: 7.6%; 
+        bottom: 0; 
+        transform: translateX(-35%);
+    }
+    .service-option{
+        max-height: 285px;
+        .option{
+            .option-number{
+             font-family: $ff-base;
+             font-size: 30px;
+            }
+            .option-header{
+             font-family: $ff-base;
+             font-weight: 600;
+             font-size: 40px;
+             line-height: 40px;
+             stroke: 0.5 #000000;
+            }
+         .explore{
+            margin-left: 105px;
+             font-family: $ff-base;
+             font-size: 20px;
+            }
+         img{
+             max-width: 68px;
+             max-height: 68px;
+         }
+        }
+        .orange{
+            color: #F65606;
+        }
+        .purple{
+            color: #BF6FE1;
+        }
+        .darkblue{
+            color: #1A1D30;
+        }
     }
 }

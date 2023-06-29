@@ -26,11 +26,10 @@
         left: 35%; 
         color: white;
         background-color: #F65606;
-        border-color: #F65606;
-    }
-    .btn:focus{
-        box-shadow: rgb(246, 86, 6) !important;
-    }
+        border: none;
+        border-radius: 0.25rem;
+    }  
+    
     .view-demo{
         left: 50%;
     }

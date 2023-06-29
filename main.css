@@ -56,10 +56,8 @@ nav .btn-custom {
   left: 35%;
   color: white;
   background-color: #F65606;
-  border-color: #F65606;
-}
-.about .btn:focus {
-  box-shadow: rgb(246, 86, 6) !important;
+  border: none;
+  border-radius: 0.25rem;
 }
 .about .view-demo {
   left: 50%;
@@ -131,8 +129,13 @@ nav .btn-custom {
 }
 
 .services {
+  position: relative;
+  margin-left: 100px;
   max-width: 1600px;
   height: 1100px;
+}
+.services .mt-200 {
+  margin-top: 200px;
 }
 .services .services-header {
   max-width: 533px;
@@ -146,4 +149,42 @@ nav .btn-custom {
   color: black;
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
+}
+.services .services-young-man {
+  position: absolute;
+  left: 7.6%;
+  bottom: 0;
+  transform: translateX(-35%);
+}
+.services .service-option {
+  max-height: 285px;
+}
+.services .service-option .option .option-number {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+.services .service-option .option .option-header {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  stroke: 0.5 #000000;
+}
+.services .service-option .option .explore {
+  margin-left: 105px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+.services .service-option .option img {
+  max-width: 68px;
+  max-height: 68px;
+}
+.services .service-option .orange {
+  color: #F65606;
+}
+.services .service-option .purple {
+  color: #BF6FE1;
+}
+.services .service-option .darkblue {
+  color: #1A1D30;
 }
