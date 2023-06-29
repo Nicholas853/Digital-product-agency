@@ -1,11 +1,14 @@
+.services-section{
+    background-color: $secondary;
+}
 .services{
     position: relative;
     margin-left: 100px;
+    max-width: 1600px;
+    height: 1100px;
     .mt-200{
         margin-top: 200px;
     }
-    max-width: 1600px;
-    height: 1100px;
     .services-header{
         max-width: 533px;
         color: black;

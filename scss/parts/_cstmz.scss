@@ -1,0 +1,72 @@
+.cstmz{
+    position: relative;
+    max-width: 1600px;
+    height: 1400px;
+    margin: 0;
+    &-container{
+        margin: auto;
+        padding: 0;
+        max-width: 1375px;
+        height: 1072px;
+    }
+    &-header{
+        margin-left: 180px;
+        max-width: 1148px;
+        color: #1A1D30;
+        font-family: $ff-base;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 60px;
+    }
+    &-center{
+        margin-top: 108px;
+        &-descr{
+            max-width: 420px;
+            margin-top: 71px;
+            font-family: $ff-base;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        &-btn{ 
+            width: 184px;
+            height: 63px;
+            margin-top: 52px;
+            color: white;
+            background-color: #F65606;
+            border: none;
+            border-radius: 0.25rem;
+        }
+        &-person{
+            max-width: 808px;
+            max-height: 470px;
+        }
+    }
+    &-footer{
+        height: 145px;
+        margin-top: 100px;
+        &-number{
+            font-size: 180px;
+        }
+        &-info{
+            margin-left: 56px;
+            margin-top: 25px;
+            &-header{
+                color: #1A1D30;
+                font-family: $ff-base;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 30px;
+            }
+            &-descr{
+                width: 555px;
+                margin-top: 22px;
+                font-family: $ff-base;
+                font-size: 20px;
+                line-height: 20px;
+            }
+            &-hands{
+                margin-left: 80px;
+            }
+        }
+    }
+}
