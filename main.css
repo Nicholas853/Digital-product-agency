@@ -329,3 +329,57 @@ nav .btn-custom {
   opacity: 1; /* Змінено */
   transform: translateX(50%);
 }
+
+.team {
+  position: relative;
+  background-color: #EEF1FB;
+  max-width: 1600px;
+  height: 1048px;
+  margin: 0;
+}
+.team-container {
+  max-width: 1352px;
+  height: 706px;
+  margin: 114px 200px 228px 48px;
+}
+.team-container-info {
+  width: 873px;
+  height: 706px;
+}
+.team-container-info-header {
+  max-width: 705px;
+  color: #1A1D30;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 76px 116px 118px 52px;
+}
+.team-container-info .carousel-scroll {
+  max-width: 134px;
+  margin: auto;
+  margin-top: 56px;
+}
+.team-container-info-descr .avatar {
+  max-width: 87px;
+}
+.team-container-info-descr-img {
+  max-width: 210px;
+}
+.team-container-info-descr-details {
+  margin-left: 130px;
+}
+.team-container-info-descr .full-name {
+  color: #1A1D30;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+.team-container-info-descr .member-descr {
+  width: 437px;
+  font-size: 16px;
+  margin-top: 38px;
+}
+.team-container-personimg {
+  max-width: 479px;
+  height: 706px;
+}
