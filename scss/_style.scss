@@ -10,3 +10,10 @@ body{
     max-width: 1600px;
     background-color: $primary;
 }
+.hidden{
+    opacity: 0;
+}
+.visible{
+    opacity: 1;
+    transition: 0.5s opacity ease-in-out;
+}

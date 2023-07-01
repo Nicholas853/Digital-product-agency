@@ -1,4 +1,4 @@
-.about {
+.about{
     z-index: 0;
     background-color: $primary;
     max-width: 1440px;
@@ -6,7 +6,7 @@
     margin: auto;
     position: relative; 
 
-    .about-header {
+    &-header {
         font-family: $ff-base;
         font-size: 80px;
         position: absolute; 
@@ -15,25 +15,24 @@
         transform: translate(-50%, -170%); 
     }
 
-    .about-btn{
-        max-width: 184px;
-        height: 63px;
+    .buttons{
         position: absolute;
         top: 35%; 
         z-index: 6;
+    }
+    &-btn{
+        max-width: 184px;
+        height: 63px;
+        
     }  
-    .get-started{
-        left: 35%; 
+    .get-started{ 
         color: white;
         background-color: #F65606;
         border: none;
         border-radius: 0.25rem;
     }  
-    
-    .view-demo{
-        left: 50%;
-    }
-    .about-icon {
+
+    &-icon {
         position: absolute; 
         left: 80%; 
         bottom: 69%; 
@@ -42,14 +41,14 @@
         max-width: 186px;
         max-height: 110px;
     }
-    .about-ellipses {
+    &-ellipses {
         position: absolute; 
         left: 50%; 
         bottom: 68%; 
         z-index: 4;
         transform: translateX(-55%);
     }
-    .about-young-girl{
+    &-young-girl{
         position: absolute; 
         left: 56.5%; 
         bottom: 27%; 
@@ -57,7 +56,7 @@
         transform: translateX(-55%);
     }
 
-    .about-circle {
+    &-circle {
         position: absolute; 
         left: 50%; 
         bottom: 0; 
@@ -68,7 +67,7 @@
     }
 
     // Black box
-    .about-box {
+    &-box {
         z-index: 4;
         position: absolute; 
         left: -5.55%; 
@@ -77,13 +76,13 @@
         max-width: 899px;
         height: 290px;
 
-        .about-box-header {
+        &-header {
             color: white;
             font-family: $ff-base;
             font-size: 90px;
         }
 
-        .about-box-descr {
+        &-descr {
             color: #CCCCCC;
             font-size: 18px;
         }
@@ -98,7 +97,7 @@
     }
     // Black box
     // Young man with laptop
-    .about-young-man{
+    &-young-man{
         position: absolute; 
         left: 70%; 
         bottom: 0; 
@@ -109,3 +108,4 @@
     }
     // Young man with laptop
 }
+

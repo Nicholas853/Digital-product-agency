@@ -38,12 +38,6 @@
 .image-slider{
   padding: 30px 0px 70px 0px;
 }
-.image-slider__wrapper{
-  
-}
-.image-slider__slide{
-
-}
 .image-slider__image{
   text-align: center;
   width: 514px;
@@ -101,7 +95,7 @@
 .swiper-pagination-bullets {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Задайте бажану відстань між булетами */
+  gap: 20px;
 }
 
   

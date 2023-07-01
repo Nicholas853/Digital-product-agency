@@ -14,7 +14,7 @@
 <!-- Header -->
     <div class="header">
       <div class="container row justify-content-center">
-        <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-light hidden">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Gomux<span class="red-letter">o</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,23 +46,24 @@
       <div class="main">
         <div class="about container row">
           <hr class="m-0">
-          <div class="about-header d-flex justify-content-center">
+          <div class="about-header d-flex justify-content-center hidden">
               We make amazing <br>
               digital products for <br> 
               your business
           </div>
-          
-          <button type="button" class="about-btn get-started">Get Started</button>
-          <button type="button" class="btn btn-outline-dark about-btn view-demo">View Demo</button>
+          <div class="buttons flex-xl-column">
+            <button type="button" class="about-btn get-started hidden">Get Started</button>
+            <button type="button" class="about-btn btn btn-outline-dark view-demo hidden">View Demo</button>
+          </div>
 
 
-          <div class="about-icon">
+          <div class="about-icon hidden d-none d-md-flex">
             <img src="images/aboutIcon.png" alt="Icon">
           </div>
-          <div class="about-ellipses">
+          <div class="about-ellipses hidden d-none d-md-flex">
             <img src="images/aboutEllipses.png" alt="Ellipses">
           </div>
-          <div class="about-young-girl">
+          <div class="about-young-girl d-none d-md-flex">
             <img src="images/aboutYoungGirle.png" alt="Young girl">
           </div>
           
@@ -77,14 +78,14 @@
                   <div class="about-box-descr second-w">Multiple your sales everyday Inchudig Taxs</div>
               </div>
           </div>
-          <img class="about-circle" src="images/Circle.png" alt="Circle">
-          <img class="about-young-man" src="images/aboutYoungMan.png" alt="Young man with laptop">
+          <img class="about-circle hidden d-none d-xl-flex" src="images/Circle.png" alt="Circle">
+          <img class="about-young-man d-none d-xxl-flex" src="images/aboutYoungMan.png" alt="Young man with laptop">
         </div>
 
         <section class="services-section">
           <div class="services d-flex justify-content-center">
             <div class="col-12 d-flex mt-200">
-              <div class="services-info col-5">
+              <div class="services-info col-5 hidden">
                 <div class="services-header mb-5">
                   We Build Premium 
                   Business
@@ -97,7 +98,7 @@
                 </div>
               </div>
             <div class="col-5">
-              <div class="service-option">
+              <div class="service-option hidden">
                 <img class="col-12 mb-4" src="images/optionLine.png" alt="Line"> 
                 <div class="option">
                   <div class="d-flex mb-5">
@@ -111,7 +112,7 @@
                 </div>
               </div>
 
-              <div class="service-option">
+              <div class="service-option hidden">
                 <img class="col-12 mb-4" src="images/optionLine.png" alt="Line"> 
                 <div class="option">
                   <div class="d-flex mb-5">
@@ -125,7 +126,7 @@
                 </div>
               </div>
 
-              <div class="service-option">
+              <div class="service-option hidden">
                 <img class="col-12 mb-4" src="images/optionLine.png" alt="Line"> 
                 <div class="option">
                   <div class="d-flex mb-5">
@@ -145,19 +146,19 @@
 
         <div class="cstmz row">
           <div class="cstmz-container">
-            <div class="cstmz-header ">
+            <div class="cstmz-header hidden">
               Customize every aspect of your design. we help you to choose multiple Designs and bring you the best product.
             </div>
             <div class="cstmz-center d-flex">
               <img class="cstmz-center-person" src="images/cstmzPerson.png" alt="Cyberpunk person">
-              <div class="col offset-1">
+              <div class="col offset-1 hidden">
                 <div class="cstmz-center-descr">
                   Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li am vocabular. Li lingues differe soln in l
                 </div>
                 <button type="button" class="cstmz-center-btn">Get Started</button>
               </div>
             </div>
-            <div class="cstmz-footer d-flex align-items-center">
+            <div class="cstmz-footer d-flex align-items-center hidden">
               <div class="cstmz-footer-number">02</div>
               <div class="cstmz-footer-info d-flex row">
                 <div class="cstmz-footer-info-header">
@@ -174,8 +175,8 @@
 
         <div class="def-design">
           <hr>
-          <img class="def-design-img" src="images/def-design-ellipses.png" alt="Ellipses">
-          <div class="def-design-header">
+          <img class="def-design-img hidden" src="images/def-design-ellipses.png" alt="Ellipses">
+          <div class="def-design-header hidden">
             Define the design. difine the fun
           </div>
           
@@ -184,7 +185,28 @@
             <div class="image-slider swiper-container">
               <div class="swiper-pagination"></div>
 
-              <div class="image-slider__wrapper swiper-wrapper">
+              <div class="image-slider__wrapper swiper-wrapper hidden">
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="images/carusel/carusel1.png" alt="">
+                    <div class="image-slider__slide__header">Digital Podcast</div>
+                    <div class="image-slider__slide__explore">Explore Project <img src="images/carusel/arrow.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="images/carusel/carusel2.png" alt="">
+                    <div class="image-slider__slide__header">Modern Payment</div>
+                    <div class="image-slider__slide__explore">Explore Project <img src="images/carusel/arrow.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="images/carusel/carusel3.png" alt="">
+                    <div class="image-slider__slide__header">Landing Page</div>
+                    <div class="image-slider__slide__explore">Explore Project <img src="images/carusel/arrow.png" alt=""></div>
+                  </div>
+                </div>
                 <div class="image-slider__slide swiper-slide">
                   <div class="image-slider__image">
                     <img src="images/carusel/carusel1.png" alt="">
@@ -215,7 +237,7 @@
         </div>
         <div class="team">
           <div class="team-container d-flex">
-            <div class="team-container-info">
+            <div class="team-container-info hidden">
               <div class="team-container-info-header">
                 Beautiful digital product exprience feedback
               </div>
@@ -257,16 +279,16 @@
     <footer>
       <div class="footer d-flex row justify-content-evenly align-items-center">
         <div class="footer-container">
-          <div class="footer-header">
+          <div class="footer-header hidden">
             Ready to take action? 
           </div>
-          <div class="footer-descr">
+          <div class="footer-descr hidden">
             Marketing gets the most out of tech opportunities to boost engagement
           </div>
-          <div class="footer-contacts">
+          <div class="footer-contacts hidden">
             <button type="button" class="footer-btn">Get In Toch</button>
           </div>
-          <div class="contacts d-flex justify-content-between">
+          <div class="contacts d-flex justify-content-between hidden">
             <div>
               <div>Digital Technology</div>
               <div class="mt-4">14/B Marina Street</div>
@@ -286,7 +308,7 @@
         </div>
         <div class="footer-foot">
           <hr>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between hidden">
             <div class="d-flex">
               <div class="me-5">Privecy Policy</div>
               <div>Term of Use</div>
