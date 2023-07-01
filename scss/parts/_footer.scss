@@ -4,5 +4,43 @@
     max-width: 1600px;
     height: 755px;
     margin: 0;
-
+    &-container{
+        width: 1486px;
+        height: 458px;
+        padding: 0;
+        background-image: url("images/footer-img.png");
+    }
+    &-header{
+        font-family: $ff-base;
+        font-size: 60px;
+        font-weight: 600;
+    }
+    &-descr{
+        font-family: $ff-base;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    &-btn{
+        width: 184px;
+        height: 63px;
+        margin-top: 52px;
+        color: white;
+        font-family: $ff-base;
+        background-color: #F65606;
+        border: none;
+        border-radius: 0.25rem;
+    }
+    .contacts{
+        max-width: 667px;
+        margin: auto;
+        margin-top: -30px;
+    }
+    &-foot{
+        width: 1400px;
+        height: 62px;
+        padding: 0;
+    }
+    .contact-width{
+        width: 116px;
+    }
 }
