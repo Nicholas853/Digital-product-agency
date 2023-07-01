@@ -383,3 +383,11 @@ nav .btn-custom {
   max-width: 479px;
   height: 706px;
 }
+
+.footer {
+  position: relative;
+  background-color: #F5F4FB;
+  max-width: 1600px;
+  height: 755px;
+  margin: 0;
+}
