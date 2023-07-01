@@ -11,12 +11,12 @@
         max-width: 1486px;
         height: 334px;
         position: absolute;
-        margin: 76px 72px 0px 42px;
+        margin: 76px 72px 155px 42px;
     }
     &-header{
         max-width: 612px;
         height: 160px;
-        margin: 154px 586px 0px 402px;
+        margin: 154px 586px 155px 402px;
         color: #1A1D30;
         font-family: $ff-base;
         font-weight: 600;
@@ -24,40 +24,85 @@
         line-height: 80px;
     }
 }
-.carousel-container {
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-  }
+.image-slider__slide__header{
+  margin-top: 54px;
+}
+.image-slider__slide__explore{
+  margin-top: 46px;
+}
+.wrapper{
+  width: 1504px;
+  padding: 30px;
+  min-height: 100%;
+}
+.image-slider{
+  padding: 30px 0px 70px 0px;
+}
+.image-slider__wrapper{
   
-  .carousel {
-    display: flex;
-    justify-content: center; /* Змінено */
-    align-items: flex-start;
-    margin-top: 20px;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-item {
-    flex-shrink: 0;
-    margin-right: 20px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
-  }
-  
-  .carousel-item.active {
-    opacity: 1;
-  }
-  
-  .carousel-item.visible-left {
-    opacity: 1; /* Змінено */
-    transform: translateX(-50%);
-  }
-  
-  .carousel-item.visible-right {
-    opacity: 1; /* Змінено */
-    transform: translateX(50%);
-  }
+}
+.image-slider__slide{
+
+}
+.image-slider__image{
+  text-align: center;
+  width: 514px;
+}
+.image-slider__image img{
+  max-width: 100%;
+}
+
+//Стрілки
+.image-slider .swiper-button-next::after,
+.image-slider .swiper-button-prev::after{
+  color: #F65606;
+}
+
+// Пагінація
+.image-slider .swiper-pagination {
+  top: 29%;
+}
+
+.swiper-pagination-bullet {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9px;
+  height: 9px;
+  background-color: #1A1D30;
+  border-radius: 4px;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.swiper-pagination-bullet-active .swiper-pagination-bullet-inner {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active:before {
+  content: '';
+  position: absolute;
+  top: -27px;
+  left: -27px;
+  right: -27px;
+  bottom: -27px;
+  border: 1px solid #1A1D30;
+  border-radius: 100px;
+}
+.swiper-pagination-bullets {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Задайте бажану відстань між булетами */
+}
+
   
   

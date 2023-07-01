@@ -7,6 +7,7 @@
     <title>DigitalProductAgency</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-vGWPMLdkBJtFtPBKQCXTt4RvdCzntm5RUk8HG/j4i4+ZADFxCOs7GU68aHV4w/Nh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end show" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item me-5">
                   <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -79,6 +80,7 @@
           <img class="about-circle" src="images/Circle.png" alt="Circle">
           <img class="about-young-man" src="images/aboutYoungMan.png" alt="Young man with laptop">
         </div>
+
         <section class="services-section">
           <div class="services d-flex justify-content-center">
             <div class="col-12 d-flex mt-200">
@@ -177,33 +179,40 @@
             Define the design. difine the fun
           </div>
           
-          <div class="carousel-container">
-            <div class="carousel-arrow left-arrow">
-              <span class="carousel-arrow-icon">&larr;</span>
-            </div>
-            <div class="carousel">
-              <div class="carousel-item active">
-                <img src="images/carusel/carusel1.png" alt="Image 1" class="carousel-image">
-                <h3 class="carousel-title">Digital Podcast</h3>
-                <p class="carousel-text">Explote project</p>
-              </div>
-              <div class="carousel-item">
-                <img src="images/carusel/carusel2.png" alt="Image 2" class="carousel-image">
-                <h3 class="carousel-title">Modern Payment</h3>
-                <p class="carousel-text">Explote project</p>
-              </div>
-              <div class="carousel-item">
-                <img src="images/carusel/carusel3.png" alt="Image 3" class="carousel-image">
-                <h3 class="carousel-title">Landing Page</h3>
-                <p class="carousel-text">Explote project</p>
-              </div>
-            </div>
-            <div class="carousel-arrow right-arrow">
-              <span class="carousel-arrow-icon">&rarr;</span>
-            </div>
-          </div>          
-        </div>
+          <!-- Slider main container -->
+          <div class="wrapper">
+            <div class="image-slider swiper-container">
+              <div class="swiper-pagination"></div>
 
+              <div class="image-slider__wrapper swiper-wrapper">
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="images/carusel/carusel1.png" alt="">
+                    <div class="image-slider__slide__header">Digital Podcast</div>
+                    <div class="image-slider__slide__explore">Explore Project <img src="images/carusel/arrow.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="images/carusel/carusel2.png" alt="">
+                    <div class="image-slider__slide__header">Modern Payment</div>
+                    <div class="image-slider__slide__explore">Explore Project <img src="images/carusel/arrow.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="images/carusel/carusel3.png" alt="">
+                    <div class="image-slider__slide__header">Landing Page</div>
+                    <div class="image-slider__slide__explore">Explore Project <img src="images/carusel/arrow.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div> 
+
+        </div>
         <div class="team">
           <div class="team-container d-flex">
             <div class="team-container-info">
@@ -242,7 +251,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
 <!-- Main -->
 
@@ -292,6 +300,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

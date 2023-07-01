@@ -1,4 +1,5 @@
 nav{
+    z-index: 1;
     .navbar-brand{
         span{
             color: #F65606;
@@ -8,4 +9,7 @@ nav{
         width: 165px;
         height: 55px;
     }
+}
+.container-fluid{
+    background-color: $primary !important;
 }
