@@ -9,19 +9,18 @@
     &-header {
         font-family: $ff-base;
         font-size: 80px;
+        line-height: 80px;
         position: absolute; 
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -170%); 
+        top: 8%
     }
-
     .buttons{
-        position: absolute;
-        top: 35%; 
+        display: flex;
+        justify-content: center;
         z-index: 6;
+        margin-top: -200px;
     }
     &-btn{
-        max-width: 184px;
+        width: 184px;
         height: 63px;
         
     }  
@@ -108,4 +107,40 @@
     }
     // Young man with laptop
 }
-
+@media (max-width: 575.98px) { 
+    .about{
+        height: 240px;
+    }
+    .buttons{
+        bottom: -150%;
+    }
+}
+@media (max-width: 767.98px) { 
+    .buttons{
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 35%;
+        margin: 0;
+        margin-top: -250px;
+    }
+    .about-header{
+        top: 3%;
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .about-young-girl{
+        bottom: 23%;
+    }
+}
+@media (max-width: 991px) { 
+    .buttons{
+        margin-top: 10px;
+    }
+    .about-header{
+        top: 5%;
+    }
+    .about-young-girl{
+        bottom: 23%;
+    }
+}
