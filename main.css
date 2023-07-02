@@ -6,7 +6,6 @@
 body {
   margin: auto;
   max-width: 1600px;
-  height: 7210px;
 }
 
 .header, .main {
@@ -59,6 +58,7 @@ nav .btn-custom {
   line-height: 80px;
   position: absolute;
   top: 8%;
+  width: 90%;
 }
 .about .buttons {
   display: flex;
@@ -86,15 +86,21 @@ nav .btn-custom {
   max-height: 110px;
 }
 .about-ellipses {
+  width: 1486px;
+  height: 205px;
   position: absolute;
-  left: 50%;
+  left: 51%;
   bottom: 68%;
-  z-index: 4;
+  z-index: 6;
   transform: translateX(-55%);
+  background-image: url("images/aboutEllipses.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .about-young-girl {
+  width: 1300px;
   position: absolute;
-  left: 56.5%;
+  left: 53.2%;
   bottom: 27%;
   z-index: 4;
   transform: translateX(-55%);
@@ -175,6 +181,8 @@ nav .btn-custom {
 @media (max-width: 991px) {
   .buttons {
     margin-top: 10px;
+    width: 95%;
+    margin-left: auto;
   }
   .about-header {
     top: 5%;
@@ -266,8 +274,8 @@ nav .btn-custom {
 }
 @media (max-width: 768px) {
   .services {
-    width: 90%;
-    height: 1100px;
+    width: 80%;
+    height: 1200px;
     margin: auto;
   }
   .services-header {
@@ -279,13 +287,13 @@ nav .btn-custom {
 }
 @media (max-width: 575.98px) {
   .services {
-    height: 950px;
+    height: 1150px;
     margin-left: 0;
   }
   .services-options, .services-inform {
     margin-top: 0 !important;
-    width: 90%;
-    margin: auto;
+    width: 80%;
+    margin-left: auto;
   }
   .services-header {
     font-size: 32px !important;
@@ -355,10 +363,12 @@ nav .btn-custom {
   font-size: 180px;
 }
 .cstmz-footer-info {
+  width: 600px;
   margin-left: 56px;
   margin-top: 25px;
 }
 .cstmz-footer-info-header {
+  width: 555px;
   color: #1A1D30;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
@@ -366,14 +376,16 @@ nav .btn-custom {
   line-height: 30px;
 }
 .cstmz-footer-info-descr {
-  width: 555px;
+  width: 650px;
   margin-top: 22px;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 20px;
 }
 .cstmz-footer-info-hands {
-  margin-left: 80px;
+  margin-left: 100px;
+  width: 414px;
+  height: 414px;
 }
 
 @media (max-width: 1199.98px) {
@@ -710,10 +722,12 @@ nav .btn-custom {
   margin: 0;
 }
 .footer-container {
-  width: 1486px;
+  width: 90%;
   height: 458px;
   padding: 0;
   background-image: url("images/footer-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .footer-header {
   font-family: "Times New Roman", Times, serif;
@@ -741,10 +755,66 @@ nav .btn-custom {
   margin-top: -30px;
 }
 .footer-foot {
-  width: 1400px;
+  max-width: 1400px;
   height: 62px;
   padding: 0;
 }
 .footer .contact-width {
   width: 116px;
+}
+
+@media (max-width: 1440px) {
+  .footer-foot {
+    width: 86%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .contacts {
+    max-width: 667px;
+    margin: auto;
+    margin-top: 52px !important;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    height: 850px;
+    justify-content: space-around !important;
+  }
+  .footer-container {
+    background-image: none;
+  }
+  .footer-foot {
+    height: 100px;
+    justify-content: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer-header {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 439px) {
+  .email-width {
+    width: 150px;
+  }
+  .footer-header {
+    margin-top: 40px;
+  }
+  .contact-width {
+    margin: auto;
+    margin-top: 52px;
+  }
+  .footer {
+    height: 950px;
+    align-items: start !important;
+  }
+  .footer-foot {
+    margin-top: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .email-width {
+    width: 130px;
+  }
 }

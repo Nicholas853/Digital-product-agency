@@ -11,7 +11,8 @@
         font-size: 80px;
         line-height: 80px;
         position: absolute; 
-        top: 8%
+        top: 8%;
+        width: 90%;
     }
     .buttons{
         display: flex;
@@ -41,15 +42,21 @@
         max-height: 110px;
     }
     &-ellipses {
+        width: 1486px;
+        height: 205px;
         position: absolute; 
-        left: 50%; 
+        left: 51%; 
         bottom: 68%; 
-        z-index: 4;
+        z-index: 6;
         transform: translateX(-55%);
+        background-image: url("images/aboutEllipses.png");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     &-young-girl{
+        width: 1300px;
         position: absolute; 
-        left: 56.5%; 
+        left: 53.2%; 
         bottom: 27%; 
         z-index: 4;
         transform: translateX(-55%);
@@ -140,6 +147,8 @@
 @media (max-width: 991px) { 
     .buttons{
         margin-top: 10px;
+        width: 95%;
+        margin-left: auto;
     }
     .about-header{
         top: 5%;

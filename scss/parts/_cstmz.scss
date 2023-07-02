@@ -49,9 +49,11 @@
             font-size: 180px;
         }
         &-info{
+            width: 600px;
             margin-left: 56px;
             margin-top: 25px;
             &-header{
+                width: 555px;
                 color: #1A1D30;
                 font-family: $ff-base;
                 font-size: 30px;
@@ -59,14 +61,16 @@
                 line-height: 30px;
             }
             &-descr{
-                width: 555px;
+                width: 650px;
                 margin-top: 22px;
                 font-family: $ff-base;
                 font-size: 20px;
                 line-height: 20px;
             }
             &-hands{
-                margin-left: 80px;
+                margin-left: 100px;
+                width: 414px;
+                height: 414px;
             }
         }
     }
