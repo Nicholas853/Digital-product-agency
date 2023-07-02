@@ -7,7 +7,6 @@
         margin: auto;
         padding: 0;
         max-width: 1375px;
-        height: 1072px;
     }
     &-header{
         margin-left: 180px;
@@ -31,14 +30,16 @@
             width: 184px;
             height: 63px;
             margin-top: 52px;
+            font-family: $ff-base;
             color: white;
             background-color: #F65606;
             border: none;
             border-radius: 0.25rem;
         }
         &-person{
-            max-width: 808px;
-            max-height: 470px;
+            width: 808px;
+            height: 470px;
+            background-image: url("images/cstmzPerson.png");
         }
     }
     &-footer{
@@ -68,5 +69,83 @@
                 margin-left: 80px;
             }
         }
+    }
+}
+@media (max-width: 1199.98px) { 
+    .cstmz{
+        height: 1550px;
+    }
+    .cstmz-container{
+        height: 90%;
+    }
+    .cstmz-center, .cstmz-center-descr{
+        margin-top: 40px;
+    }
+    .cstmz-center-person{
+        margin: auto;
+    }
+    .cstmz-header{
+        width: 80%;
+        margin: auto;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .cstmz-center-info{
+        width: 80%;
+        margin: auto;
+    }
+    .cstmz-footer{
+        height: 30%;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 991.98px) { 
+    .cstmz{
+        height: 1350px;
+    }
+    .cstmz-center-person{
+        width: 80%;
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .cstmz-footer-info{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width: 768px) { 
+    .cstmz{
+        height: 1250px;
+    }
+    .cstmz-header{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .cstmz-footer-number{
+        font-size: 160px;
+    }
+    
+}
+@media (max-width: 575.98px) { 
+    .cstmz{
+        height: 1200px;
+    }
+    .cstmz-header{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .cstmz-center-person{
+        width: 80%;
+        height: 200px;
+    }
+    .cstmz-center-descr{
+        margin-top: 10px;
+    }
+    .cstmz-center-btn{
+        margin-top: 35px;
+    }
+    .cstmz-footer-number{
+        font-size: 120px;
     }
 }

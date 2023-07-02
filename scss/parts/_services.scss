@@ -73,13 +73,18 @@
 }
 @media (max-width: 991.98px) { 
     .services{
-        height: 1500px;
+        height: 1200px;
     }
     .services-options, .services-inform{
         width: 75%;
     }
 }
 @media (max-width: 768px) { 
+    .services{
+        width: 90%;
+        height: 1100px;
+        margin: auto;
+    }
     .services-header{
         font-size: 48px !important;
     }
@@ -89,7 +94,7 @@
  }
 @media (max-width: 575.98px) { 
     .services{
-        height: 1300px;
+        height: 950px;
         margin-left: 0;
     }
     .services-options, .services-inform{
