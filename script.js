@@ -9,11 +9,6 @@ navbarToggler.addEventListener('click', function() {
 
 //Ініціалізія Swiper
 new Swiper('.image-slider', {
-  //Стрілки
-  navigation:{
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
   // Навігація
   // Булети, поточне положення, прогрессбар
   pagination: {

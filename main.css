@@ -471,6 +471,7 @@ nav .btn-custom {
   height: 1520px;
   background-color: #F5F4FB;
   margin: 0;
+  overflow: hidden;
 }
 .def-design hr {
   border: 1px solid #EEF1FB;
@@ -493,31 +494,6 @@ nav .btn-custom {
   line-height: 80px;
 }
 
-@media (max-width: 991.98px) {
-  .def-design-img {
-    height: 250px;
-  }
-  .def-design-header {
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
-@media (max-width: 768px) {
-  .def-design-img {
-    background-image: none;
-    width: 80%;
-    margin: auto;
-  }
-}
-@media (max-width: 575.98px) {
-  .def-design-img {
-    height: 150px;
-  }
-  .def-design-header {
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
 .image-slider__slide__header {
   margin-top: 54px;
 }
@@ -533,7 +509,7 @@ nav .btn-custom {
 }
 
 .image-slider {
-  margin-top: 700px;
+  margin-top: 50px;
   padding: 30px 0px 70px 0px;
 }
 
@@ -546,13 +522,8 @@ nav .btn-custom {
   max-width: 100%;
 }
 
-.image-slider .swiper-button-next::after,
-.image-slider .swiper-button-prev::after {
-  color: #F65606;
-}
-
 .image-slider .swiper-pagination {
-  top: 40%;
+  top: 20%;
 }
 
 .swiper-pagination-bullet {
@@ -597,6 +568,64 @@ nav .btn-custom {
   gap: 20px;
 }
 
+@media (max-width: 991.98px) {
+  .def-design-img {
+    height: 250px;
+  }
+  .def-design-header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .def-design {
+    height: 1200px;
+  }
+  .swiper-pagination-bullets {
+    margin-top: 70px;
+  }
+  .def-design-img {
+    background-image: none;
+    width: 80%;
+    margin: auto;
+  }
+  .swiper-pagination-bullet-active:before {
+    top: -17px;
+    left: -17px;
+    right: -17px;
+    bottom: -17px;
+  }
+}
+@media (max-width: 575.98px) {
+  .def-design {
+    height: 1000px;
+  }
+  .def-design-img {
+    height: 150px;
+  }
+  .def-design-header {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .image-slider {
+    margin-top: 200px;
+  }
+  .image-slider__image {
+    text-align: center;
+    width: 250px;
+  }
+  .swiper-pagination-bullets {
+    gap: 9px;
+  }
+  .wrapper {
+    padding: 20px 60px 30px 60px;
+  }
+}
+@media (min-width: 768px) {
+  .image-slider .swiper-pagination {
+    top: 30%;
+  }
+}
 .team {
   position: relative;
   background-color: #EEF1FB;
