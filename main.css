@@ -594,7 +594,6 @@ nav .btn-custom {
 }
 .team-container {
   max-width: 1352px;
-  height: 706px;
   margin: 114px 200px 228px 48px;
 }
 .team-container-info {
@@ -635,8 +634,11 @@ nav .btn-custom {
   margin-top: 38px;
 }
 .team-container-personimg {
-  max-width: 479px;
+  width: 479px;
   height: 706px;
+  background-image: url("images/team-container-personimg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 1325px) {
@@ -676,12 +678,28 @@ nav .btn-custom {
 }
 @media (max-width: 575.98px) {
   .team {
-    height: 1600px;
+    height: 1300px;
   }
   .member-descr {
-    width: 90%;
+    width: 90% !important;
     font-size: 16px;
     margin-top: 38px;
+  }
+  .carousel-scroll {
+    margin-bottom: 40px;
+  }
+  .team-container-personimg {
+    width: 300px;
+    margin-top: 0px;
+  }
+  .team-container-info-header {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .team-container-info {
+    height: 806px;
   }
 }
 .footer {
