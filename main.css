@@ -639,6 +639,48 @@ nav .btn-custom {
   height: 706px;
 }
 
+@media (min-width: 1325px) {
+  .team-container {
+    flex-direction: row !important;
+  }
+}
+@media (max-width: 1325px) {
+  .team {
+    height: 1500px;
+  }
+  .team-container {
+    width: 90%;
+    margin: auto;
+  }
+  .team-container-personimg {
+    margin: auto;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  .team-container-info-descr-details {
+    margin-left: 20px;
+  }
+  .team-container-info {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .team-container-info-descr {
+    margin: auto;
+    width: 100%;
+  }
+  .team-container-personimg {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 575.98px) {
+  .member-descr {
+    width: 90%;
+    font-size: 16px;
+    margin-top: 38px;
+  }
+}
 .footer {
   position: relative;
   background-color: #F5F4FB;
