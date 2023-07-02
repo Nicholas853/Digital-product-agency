@@ -6,7 +6,7 @@
     margin-left: 100px;
     max-width: 1600px;
     height: 1100px;
-    .mt-200{
+    &-info{
         margin-top: 200px;
     }
     .services-header{
@@ -44,8 +44,8 @@
             }
          .explore{
             margin-left: 105px;
-             font-family: $ff-base;
-             font-size: 20px;
+            font-family: $ff-base;
+            font-size: 20px;
             }
          img{
              max-width: 68px;
@@ -61,5 +61,54 @@
         .darkblue{
             color: #1A1D30;
         }
+    }
+}
+@media (max-width: 1199.98px) { 
+    .services-header{
+        font-size: 56px !important;
+    }
+    .explore{
+        margin-left: 0px !important;
+    }
+}
+@media (max-width: 991.98px) { 
+    .services{
+        height: 1500px;
+    }
+    .services-options, .services-inform{
+        width: 75%;
+    }
+}
+@media (max-width: 768px) { 
+    .services-header{
+        font-size: 48px !important;
+    }
+    .services-info{
+        margin-top: 100px !important;
+    }
+ }
+@media (max-width: 575.98px) { 
+    .services{
+        height: 1300px;
+        margin-left: 0;
+    }
+    .services-options, .services-inform{
+        margin-top: 0 !important;
+        width: 90%;
+        margin: auto;
+    }
+    .services-header{
+        font-size: 32px !important;
+    }
+    .option-header{
+        justify-content: space-evenly;
+        font-size: 26px !important;
+        line-height: 26px !important;
+    }
+    .option-number{
+        font-size: 20px !important;
+    }
+    .option-link{
+        width: 40px;
     }
 }
