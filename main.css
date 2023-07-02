@@ -464,15 +464,16 @@ nav .btn-custom {
   border: 1px solid #EEF1FB;
 }
 .def-design-img {
-  max-width: 1486px;
+  width: 90%;
   height: 334px;
-  position: absolute;
+  background-image: url("images/def-design-ellipses.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 76px 72px 155px 42px;
 }
 .def-design-header {
   max-width: 612px;
-  height: 160px;
-  margin: 154px 586px 155px 402px;
+  margin: auto;
   color: #1A1D30;
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
@@ -480,6 +481,31 @@ nav .btn-custom {
   line-height: 80px;
 }
 
+@media (max-width: 991.98px) {
+  .def-design-img {
+    height: 250px;
+  }
+  .def-design-header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .def-design-img {
+    background-image: none;
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .def-design-img {
+    height: 150px;
+  }
+  .def-design-header {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
 .image-slider__slide__header {
   margin-top: 54px;
 }
@@ -490,11 +516,12 @@ nav .btn-custom {
 
 .wrapper {
   width: 1504px;
-  padding: 30px;
+  padding: 60px;
   min-height: 100%;
 }
 
 .image-slider {
+  margin-top: 700px;
   padding: 30px 0px 70px 0px;
 }
 
@@ -513,7 +540,7 @@ nav .btn-custom {
 }
 
 .image-slider .swiper-pagination {
-  top: 29%;
+  top: 40%;
 }
 
 .swiper-pagination-bullet {
