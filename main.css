@@ -675,6 +675,9 @@ nav .btn-custom {
   }
 }
 @media (max-width: 575.98px) {
+  .team {
+    height: 1600px;
+  }
   .member-descr {
     width: 90%;
     font-size: 16px;
