@@ -23,17 +23,6 @@ new Swiper('.image-slider', {
   spaceBetween: 153,
   loop: true,
   loopedSlides: 3,
-  // breakpoints: {
-  //   // 1024: {
-  //   //   slidesPerView: 3,
-  //   // },
-  //   // 768: {
-  //   //   slidesPerView: 2,
-  //   // },
-  //   1024: {
-  //     slidesPerView: 3,
-  // //   },
-  // },
 });
 
 

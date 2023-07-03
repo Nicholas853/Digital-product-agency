@@ -621,7 +621,7 @@ nav .btn-custom {
     padding: 20px 60px 30px 60px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .image-slider .swiper-pagination {
     top: 30%;
   }
