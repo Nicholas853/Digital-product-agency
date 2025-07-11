@@ -10,6 +10,11 @@ body {
   max-width: 1600px;
 }
 
+html,
+body {
+  background-color: #eef1fb;
+}
+
 .header,
 .main {
   max-width: 1600px;
