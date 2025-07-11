@@ -26,11 +26,12 @@
         width: 184px;
         height: 63px;
         margin-top: 52px;
-        color: white;
         font-family: $ff-base;
-        background-color: #F65606;
-        border: none;
-        border-radius: 0.25rem;
+        @extend .btn-orange;
+        &:hover, &:focus {
+          background-color: #d94d04;
+          color: #fff;
+        }
     }
     .contacts{
         max-width: 667px;

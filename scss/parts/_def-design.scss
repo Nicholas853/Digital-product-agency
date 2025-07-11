@@ -19,11 +19,7 @@
     &-header{
         max-width: 612px;
         margin: auto;
-        color: #1A1D30;
-        font-family: $ff-base;
-        font-weight: 600;
-        font-size: 80px;
-        line-height: 80px;
+        @include section-title;
     }
 }
 

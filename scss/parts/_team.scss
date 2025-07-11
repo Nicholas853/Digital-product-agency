@@ -12,10 +12,7 @@
             height: 706px;
             &-header{
                 max-width: 705px;
-                color: #1A1D30;
-                font-family: $ff-base;
-                font-size: 60px;
-                line-height: 60px;
+                @include section-title;
                 margin: 76px 116px 118px 52px;
             }
             .carousel-scroll{

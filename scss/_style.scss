@@ -1,18 +1,48 @@
-*, *::after, *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-body{
-    margin: auto;
-    max-width: 1600px;
+body {
+  margin: auto;
+  max-width: 1600px;
 }
-.header, .main{
-    max-width: 1600px;
-    background-color: $primary;
+.header,
+.main {
+  max-width: 1600px;
+  background-color: $primary;
 }
-.hidden{
-    opacity: 0;
+.hidden {
+  opacity: 0;
 }
-.visible{
-    opacity: 1;
-    transition: 0.5s opacity ease-in-out;
+.visible {
+  opacity: 1;
+  transition: 0.5s opacity ease-in-out;
+}
+.btn-orange {
+  color: white;
+  background-color: #f65606;
+  border: none;
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+  &:hover,
+  &:focus {
+    background-color: #d94d04;
+    color: #fff;
+  }
+}
+@mixin section-title {
+  font-family: $ff-base;
+  font-weight: 600;
+  color: #1a1d30;
+  font-size: 60px;
+  line-height: 60px;
+  @media (max-width: 991.98px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  @media (max-width: 575.98px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }

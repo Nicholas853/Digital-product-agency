@@ -1,5 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/argue-demo");
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -8,7 +10,8 @@ body {
   max-width: 1600px;
 }
 
-.header, .main {
+.header,
+.main {
   max-width: 1600px;
   background-color: #EEF1FB;
 }
@@ -20,6 +23,18 @@ body {
 .visible {
   opacity: 1;
   transition: 0.5s opacity ease-in-out;
+}
+
+.btn-orange, .footer-btn, .cstmz-center-btn, .about .get-started {
+  color: white;
+  background-color: #f65606;
+  border: none;
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+}
+.btn-orange:hover, .footer-btn:hover, .cstmz-center-btn:hover, .about .get-started:hover, .btn-orange:focus, .footer-btn:focus, .cstmz-center-btn:focus, .about .get-started:focus {
+  background-color: #d94d04;
+  color: #fff;
 }
 
 .header .container {
@@ -54,11 +69,25 @@ nav .btn-custom {
 }
 .about-header {
   font-family: "Times New Roman", Times, serif;
-  font-size: 80px;
-  line-height: 80px;
+  font-weight: 600;
+  color: #1a1d30;
+  font-size: 60px;
+  line-height: 60px;
   position: absolute;
   top: 8%;
   width: 90%;
+}
+@media (max-width: 991.98px) {
+  .about-header {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 575.98px) {
+  .about-header {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 .about .buttons {
   display: flex;
@@ -69,12 +98,6 @@ nav .btn-custom {
 .about-btn {
   width: 184px;
   height: 63px;
-}
-.about .get-started {
-  color: white;
-  background-color: #F65606;
-  border: none;
-  border-radius: 0.25rem;
 }
 .about-icon {
   position: absolute;
@@ -206,10 +229,23 @@ nav .btn-custom {
 }
 .services .services-header {
   max-width: 533px;
-  color: black;
   font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: #1a1d30;
   font-size: 60px;
-  line-height: 65px;
+  line-height: 60px;
+}
+@media (max-width: 991.98px) {
+  .services .services-header {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 575.98px) {
+  .services .services-header {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 .services .services-descr {
   max-width: 493px;
@@ -324,11 +360,23 @@ nav .btn-custom {
 .cstmz-header {
   margin-left: 180px;
   max-width: 1148px;
-  color: #1A1D30;
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
+  color: #1a1d30;
   font-size: 60px;
   line-height: 60px;
+}
+@media (max-width: 991.98px) {
+  .cstmz-header {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 575.98px) {
+  .cstmz-header {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 .cstmz-center {
   margin-top: 108px;
@@ -345,10 +393,6 @@ nav .btn-custom {
   height: 63px;
   margin-top: 52px;
   font-family: "Times New Roman", Times, serif;
-  color: white;
-  background-color: #F65606;
-  border: none;
-  border-radius: 0.25rem;
 }
 .cstmz-center-person {
   width: 808px;
@@ -487,11 +531,23 @@ nav .btn-custom {
 .def-design-header {
   max-width: 612px;
   margin: auto;
-  color: #1A1D30;
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
-  font-size: 80px;
-  line-height: 80px;
+  color: #1a1d30;
+  font-size: 60px;
+  line-height: 60px;
+}
+@media (max-width: 991.98px) {
+  .def-design-header {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 575.98px) {
+  .def-design-header {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .image-slider__slide__header {
@@ -643,11 +699,24 @@ nav .btn-custom {
 }
 .team-container-info-header {
   max-width: 705px;
-  color: #1A1D30;
   font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: #1a1d30;
   font-size: 60px;
   line-height: 60px;
   margin: 76px 116px 118px 52px;
+}
+@media (max-width: 991.98px) {
+  .team-container-info-header {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 575.98px) {
+  .team-container-info-header {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 .team-container-info .carousel-scroll {
   max-width: 134px;
@@ -772,11 +841,11 @@ nav .btn-custom {
   width: 184px;
   height: 63px;
   margin-top: 52px;
-  color: white;
   font-family: "Times New Roman", Times, serif;
-  background-color: #F65606;
-  border: none;
-  border-radius: 0.25rem;
+}
+.footer-btn:hover, .footer-btn:focus {
+  background-color: #d94d04;
+  color: #fff;
 }
 .footer .contacts {
   max-width: 667px;
